@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agro Forte, Futuro Sustentável</title>
+
+  <style>
+    :root {
+      --verde-escuro: #1b4332;
+      --verde: #2d6a4f;
+      --verde-claro: #95d5b2;
+      --amarelo: #ffd166;
+      --cinza: #f5f5f5;
+      --texto: #1a1a1a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: var(--cinza);
+      color: var(--texto);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(120deg, var(--verde-escuro), var(--verde));
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    nav {
+      background: white;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--verde);
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--verde-escuro);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .destaque {
+      background: var(--verde-claro);
+      padding: 40px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    footer {
+      background: var(--verde-escuro);
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+      margin-top: 40px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background: var(--verde);
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: var(--verde-escuro);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Agro forte, futuro sustentável</h1>
+    <p>Equilíbrio entre produção agrícola e preservação do meio ambiente 🌱🚜</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#pilares">Pilares</a>
+    <a href="#tecnologia">Tecnologia</a>
+    <a href="#acao">Ação</a>
+  </nav>
+
+  <section id="sobre">
+    <h2>🌍 Sobre o projeto</h2>
+    <p>
+      O agro moderno não é apenas produção: é inovação, responsabilidade e respeito à natureza.
+      Este site representa a união entre crescimento econômico e sustentabilidade ambiental,
+      mostrando que é possível produzir mais e impactar menos.
+    </p>
+  </section>
+
+  <section id="pilares">
+    <h2>🌿 Pilares da sustentabilidade</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Produção inteligente</h3>
+        <p>Uso eficiente do solo, água e recursos naturais para maximizar resultados.</p>
+      </div>
+
+      <div class="card">
+        <h3>Preservação ambiental</h3>
+        <p>Proteção de florestas, rios e biodiversidade para as próximas gerações.</p>
+      </div>
+
+      <div class="card">
+        <h3>Responsabilidade social</h3>
+        <p>Valorização do trabalhador rural e desenvolvimento das comunidades agrícolas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tecnologia">
+    <h2>🚜 Tecnologia no campo</h2>
+    <div class="destaque">
+      <p>
+        Drones, sensores, irrigação inteligente e inteligência artificial estão transformando o agro.
+        A tecnologia reduz desperdícios e aumenta a eficiência, criando um futuro mais verde.
+      </p>
+      <button onclick="mostrarMensagem()">Descobrir impacto positivo</button>
+      <p id="mensagem"></p>
+    </div>
+  </section>
+
+  <section id="acao">
+    <h2>🌱 Faça parte da mudança</h2>
+    <p>
+      Pequenas ações geram grandes impactos: consumo consciente, apoio à agricultura sustentável
+      e valorização de práticas ecológicas.
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2026 Agro Forte - Futuro Sustentável | Criado com foco em equilíbrio e inovação 🌎</p>
+  </footer>
+
+  <script>
+    function mostrarMensagem() {
+      const msg = document.getElementById("mensagem");
+      msg.textContent = "Menos desperdício, mais produtividade e um planeta mais saudável 🌱✨";
+    }
+  </script>
+
+</body>
+</html>
